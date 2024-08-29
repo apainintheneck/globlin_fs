@@ -21,7 +21,7 @@ gleam add globlin_fs
 
  pub fn main() {
    let assert Ok(pattern) = globlin.new_pattern("**/*.gleam")
-   case globlin_fs.glob(pattern) {
+   case globlin_fs.glob(pattern, returning: globlin_fs.RegularFiles) {
      Ok(files) -> {
        files
        |> list.sort(string.compare)
