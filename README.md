@@ -5,6 +5,7 @@
 
 This package adds onto the functionality in the [globlin](https://hexdocs.pm/globlin) package by adding file system globbing. The main reason to keep it separate is to not require `simplifile` in the original `globlin` package so it can be used in the browser.
 
+Note: This library only currently supports Unix file paths. That means it should work on Linux, macOS and BSD.
 
 ## Add Dependency
 ```sh
